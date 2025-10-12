@@ -1,0 +1,15 @@
+from selenium.webdriver.common.by import By
+
+desks_select_loc = (By.XPATH, '//span[@class="d-inline-block" and text()="Desks"]')
+furniture_select_loc = (By.CSS_SELECTOR, '#products_grid li:nth-child(2) span')
+dropdown_button_loc = (By.CSS_SELECTOR, '#products_grid div.o_sortby_dropdown > a')
+dropdown_menu_loc = (By.CSS_SELECTOR, 'div.dropdown-menu.show')
+price_low_to_high_loc = (By.XPATH, '//a[@class="dropdown-item" and contains(., "Price - Low to High")]')
+product_elements_loc = (By.CSS_SELECTOR, "td.oe_product")
+title_loc = (By.CSS_SELECTOR, "h6.o_wsale_products_item_title a")
+price_text_loc = (By.CSS_SELECTOR, "span.oe_currency_value")
+product_locator_loc = (By.CSS_SELECTOR, "h6.o_wsale_products_item_title a")
+components_loc = (By.XPATH, "//span[text()='Components']")
+new_list_produt_names = (By.CSS_SELECTOR, "h6.o_wsale_products_item_title a")
+products_loc = (By.CSS_SELECTOR, 'div.o_wsale_product_information')
+name_loc = (By.CSS_SELECTOR, 'h6.o_wsale_products_item_title a')
