@@ -12,12 +12,6 @@ class BasePage:
 
     def open_page(self):
         if self.page_url:
-            self.driver.get(f'{self.base_url}{self.page_url}')
-        else:
-            raise NotImplementedError('Page can not be opened fot this page class')
-
-    def open_page(self):
-        if self.page_url:
             # гарантируем, что URL склеится правильно
             if not self.page_url.startswith("/"):
                 self.page_url = "/" + self.page_url
