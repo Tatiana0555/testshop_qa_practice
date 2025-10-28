@@ -9,11 +9,12 @@ from pages.product_page import ProductPage
 @pytest.fixture()
 def driver():
     options = Options()
+    options.add_argument("--headless")
+    options.add_argument("--disable-gpu")
     options.add_argument("--disable-infobars")        # Отключает информационные панели
     options.add_argument("--disable-notifications")   # Отключает уведомления
     options.add_argument("--no-sandbox")              # Опция для контейнеров
     options.add_argument("--disable-dev-shm-usage")   # Для устранения проблем с памятью
-    options.add_argument("--disable-gpu")
 
     chrome_driver = webdriver.Chrome(options=options)
     chrome_driver.maximize_window()
